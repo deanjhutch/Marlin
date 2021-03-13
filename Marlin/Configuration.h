@@ -2499,9 +2499,9 @@
   //#define TFT_INTERFACE_SPI
 
   // TFT Resolution. Enable one of the following options:
-  #define TFT_RES_320x240
+  //#define TFT_RES_320x240
   //#define TFT_RES_480x272
-  //#define TFT_RES_480x320
+  #define TFT_RES_480x320
 #endif
 
 /**
@@ -2514,8 +2514,8 @@
  *   For LVGL_UI also copy the 'assets' folder from the build directory to the
  *   root of your SD card, together with the compiled firmware.
  */
-#define TFT_CLASSIC_UI
-//#define TFT_COLOR_UI
+//#define TFT_CLASSIC_UI
+#define TFT_COLOR_UI
 //#define TFT_LVGL_UI
 
 #if ENABLED(TFT_LVGL_UI)
@@ -2551,10 +2551,10 @@
 
   #define TOUCH_SCREEN_CALIBRATION
 
-  #define TOUCH_CALIBRATION_X -12316
-  #define TOUCH_CALIBRATION_Y   8981
-  #define TOUCH_OFFSET_X         340
-  #define TOUCH_OFFSET_Y         -20
+  #define TOUCH_CALIBRATION_X  -16825
+  #define TOUCH_CALIBRATION_Y   11050
+  #define TOUCH_OFFSET_X          488
+  #define TOUCH_OFFSET_Y          -13
   //#define TOUCH_ORIENTATION TOUCH_LANDSCAPE
 
   #if BOTH(TOUCH_SCREEN_CALIBRATION, EEPROM_SETTINGS)
@@ -2562,7 +2562,7 @@
   #endif
 
   #if ENABLED(TFT_COLOR_UI)
-    //#define SINGLE_TOUCH_NAVIGATION
+    #define SINGLE_TOUCH_NAVIGATION
   #endif
 #endif
 
