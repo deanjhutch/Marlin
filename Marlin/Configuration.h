@@ -802,7 +802,7 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 92.6 }
 // TITAN EXTRUDER:
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 837 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 797 }
 
 /**
  * Default Max Feed Rate (mm/s)
